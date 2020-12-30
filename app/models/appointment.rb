@@ -3,6 +3,6 @@ class Appointment < ApplicationRecord
   belongs_to :patient
 
   def date_converter
-    self.appointment_datetime.strftime("%B %d, %Y at %I:%M%a")
+    self.appointment_datetime.strftime("%B %d, %Y at %T")
   end
 end
