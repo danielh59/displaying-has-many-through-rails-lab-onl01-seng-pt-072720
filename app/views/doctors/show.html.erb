@@ -1,5 +1,5 @@
 <h1> Hello <%=@doctor.name%> </h1>
 
 <% @doctor.appointments.each do |app| %>
-  <%= link_to app.date_converter, app_path(app) %>
+  <h3> <%= link_to app.date_converter, app_path(app) %> </h3>
 <% end %>
