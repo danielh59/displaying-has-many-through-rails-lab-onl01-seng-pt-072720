@@ -3,7 +3,7 @@
   <% @patient.appointments.each do |app| %>
   <h3> Appointment Date and Time: <%= link_to app.date_converter, appointment_path(app) %> </h3>
   </br>
-    With: app.doctor.name
+    With:  <%= link_to app.doctor.name %>
     </br>
 
   <% end %>
