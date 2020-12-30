@@ -1,7 +1,7 @@
  <% @patients.each do |x| %>
  <ul>
 
-<h2> <li> Name: <%= x.name%> Number of Appointments </li>  </h2>
+<h2> <li> Name: <%= x.name%> Number of Appointments <%=x.appointments.count%> </li></h2>
 
 </ul>
 
