@@ -1,7 +1,7 @@
   <h1>All Your Appointments <%= @patient.name%>! </h1>
 
   <% @patient.appointments.each do |app| %>
-
+  <h3> Appointment Date and Time: <%= link_to app.date_converter, appointment_path(app) %> </h3>
   </br>
 
     </br>
